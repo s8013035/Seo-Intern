@@ -1,0 +1,70 @@
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>受付</title>
+        <script src="js/vue.min.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/vue-router.js"></script>
+        <script src="js/staff.js"></script>           
+        <script src="js/call.js"></script> 
+        <script src="js/resvisit.js"></script>
+        <script src="js/appointment.js"></script>
+        <script src="js/covid.js"></script>
+        <link rel="stylesheet" href="./css/loveimg.css">
+        <link rel="stylesheet" href="./css/inquiry.css">
+        <script src="js/inquiry.js"></script>
+        <script src="js/home.js"></script>
+        <link rel="icon" href="img/logo.png">
+       <!-- <meta property="og:image" content="https://www.serio.inc/assets/images/common/ogp.jpg"> -->
+
+        <script src="js/covid.js"></script>
+        <!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> -->
+    </head>
+
+    <body style="background-color:#fffffffd">
+        
+        <div id="app">
+            <header  id="header">  
+                <link rel="icon" href="img/logo.png">   
+                <div class="siteLogo"><a  href="index.html" ></a></div>
+
+                <div style="background-color: silver;"><h3 style="text-decoration: none;color:black; font-family: 'Kaushan Script', cursive">Reception　Manager　ヨビダス君</h3><div>
+                <div style="text-align: right ; float: right; ">
+                    <router-link to="/call"><font size="3" >呼び出し</font></router-link>    
+                    <router-link to="/resvisit">予約者受付</router-link>  
+                    <router-link to="/staff">登録・削除</router-link> 
+                    <router-link to="/appointment">来訪予約</router-link>  
+                    <router-link to="/inquiry">予約照会</router-link> 
+                </div>
+                <!-- <h1 class="siteLogo" ><span><a></a><p href="index.html" style="text-decoration: none;color:black; font-family: 'Kaushan Script', cursive">Reception　Manager　ヨビダス君</p></span></h1>  -->
+
+                <!-- <p class="animated" id="covid"></p> -->
+                <!-- <p class="animated">ちなみに、現在の岡山県内の新型コロナウイルス累計感染者数は{{cova}}人らしいです…(ﾟДﾟ;)</p> -->
+                <!-- <cov></cov> -->
+            </header>  
+            <router-view></router-view>                
+        <script src="js/index.js"></script>
+        </div>
+    </body>
+</html>
+<style>
+    .animated {
+      animation: move-y .5s infinite alternate ease-in-out;
+      display: inline-block;
+      color: red;
+    }
+    @keyframes move-y {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(10px);
+      }
+    }
+</style>

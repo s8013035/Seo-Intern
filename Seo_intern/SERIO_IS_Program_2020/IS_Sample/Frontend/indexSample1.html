@@ -1,0 +1,39 @@
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>弁当管理</title>
+        <script src="js/vue.min.js"></script>
+        <script src="js/axios.min.js"></script>
+    </head>
+    <body>
+        <div id="app" v-cloak>
+            <h1>弁当管理アプリ</h1>
+            <label>弁当名</label>
+            <input type="text" v-model="name">
+            <span v-if="error_name" style="color:red">弁当名が入力されていません</span>
+            <br>
+            <label>値段</label>
+            <input type="text" v-model="price">
+            <span v-if="error_price" style="color:red">値段が入力されていません。</span>
+            <br>
+            <button v-on:click="allClear">
+                <font size="2">CLEAR</font>
+            </button>
+            <button v-on:click="getLunch">
+                <font size="2">GET</font>
+            </button>
+            <button v-on:click="addLunch">
+                <font size="2">ADD</font>
+            </button>
+            <lunch-table v-bind:records="result"></lunch-table>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

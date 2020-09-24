@@ -1,0 +1,185 @@
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+  }
+  .popup.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .popup-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .popup-inner img {
+    width: 100%;
+  }
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .close-btn i {
+    font-size: 20px;
+    color: #333;
+  }
+  .black-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  /* siteLogo
+-------------------------------------------*/
+/* #header .siteLogo {
+	display: table;
+	height: 80px;
+	padding: 0 30px;
+} */
+/* #header .siteLogo > span {
+	display: table-cell;
+	vertical-align: middle;
+} */
+#header .siteLogo a {
+	overflow: hidden;
+	display: block;
+	width: 144px;
+	height: 50px;
+	background: url(../img/logo.png) no-repeat center center;
+	background-size: contain;
+	text-indent: -99999px;
+}
+@media only screen and (max-width:1100px) {
+	#header .siteLogo {
+		padding: 0 15px;
+	}
+	#header .siteLogo a {
+		width: 110px;
+	}
+}
+@media only screen and (max-width:767px) {
+	#header .siteLogo {
+		height: 59px;
+		padding: 0 12px;
+	}
+	#header .siteLogo a {
+		width: 90px;
+		height: 38px;
+	}
+}
+
+.uketuke img {
+  height: 350px;  /* 横幅を200pxに */
+}
+
+/*ボタン*/
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color:white;
+  border: solid 2px #989da0;
+  background: #2f3233;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #617174;
+  color: white;
+}
+
+/*ボタン２*/
+.btn-flat-logo {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #617174;
+  transition: .4s;
+}
+
+.btn-flat-logo:hover {
+  background: #FFF;
+  color: #728588;
+
+}
+
+/*テーブル*/
+table{
+  border-collapse:collapse;
+  /* margin:0 auto; */
+}
+th{
+  color:#f1f5f8;
+  background: rgb(35, 24, 95);
+}
+td{
+  border-bottom:1px dashed #999;
+}
+th{
+  border-top:2px solid #84898f;
+  border-bottom:2px solid ;
+}
+tr:last-child td{
+  border-bottom:1px solid #111416;
+}
+td,th{
+  padding:1px;
+}
+
+
+
+/* table{
+	table-layout: fixed;
+}
+
+/* ヘッダー */
+/* thead th {
+	background:#181B39;
+	font-weight: bold;
+	color:#fff;
+}
+
+
+/* ボディ項目・フッター項目 */
+/* tbody th, tfoot th {
+	background:#FFFFFC;
+	font-weight: bold;
+} */
+
+/* ボディデータ・フッターデータ */
+/* tbody td, tfoot td {
+	text-align:center;
+} */
+
+/* 偶数行　１行ごとの色変えが不要なら削除 */
+/* tr:nth-child(2n) td {
+    background: #FBFBF6;
+}  */
+

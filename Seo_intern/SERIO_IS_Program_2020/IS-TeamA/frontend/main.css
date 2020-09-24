@@ -1,0 +1,16 @@
+
+body {
+    background: #eeeeee;
+    font-family: Meiryo;
+    
+  }
+  
+div {
+    background: #ffffff;
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+
+}

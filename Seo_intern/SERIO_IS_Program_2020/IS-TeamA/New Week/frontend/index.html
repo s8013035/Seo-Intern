@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>受付</title>
+    <script src="js/vue.min.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/Call.js"></script>
+    <script src="js/Kanri.js"></script>
+    <script src="js/uketukebangou.js"></script>
+    <script src="js/Reservation.js"></script>
+    <script src="js/Recep-list.js"></script>
+    <script src="js/Home.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="img/logo.png">
+
+    <style>
+      body {
+        background: #eeeeee;
+        font-family: Meiryo;
+      }
+      div {
+        background: #ffffff;
+        width: 1000px;
+        padding: 1em 3em 22em 3em;
+        text-align: center;
+        border: 1px solid #cccccc;
+        margin: 40px auto;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>
+            <router-link to="/" class="siteLogo">serio</router-link>
+        </h1>
+        
+        <h2>受付管理システム</h2>
+      </header>
+        <nav>
+            <ul>
+                <li><router-link to="/Call" class="link_style">担当者呼出</router-link></li>
+                <li><router-link to="/uketukebangou" class="link_style">ご予約済みの方はこちら</router-link></li>
+                <li><router-link to="/Kanri" class="link_style">担当者管理</router-link></li>
+                <li><router-link to="/Reservation" class="link_style">予約管理</router-link></li>
+                <li><router-link to="/Recep-list" class="link_style">予約受付情報</router-link></li>
+                <li></li>
+            </ul>
+        </nav>
+    
+        <router-view></router-view>
+         
+    </div>
+    <script src="./index.js"></script>
+   <footer>
+      <p class="copyright">©The World Inc. all rights reserved</p>
+  </footer>
+  </body>
+</html>

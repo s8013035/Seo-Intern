@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "5f44a70d7b6ee1f8e307fdaf"
+  },
+  "name": "玉田",
+  "slack_email": "seriointern009@outlook.jp"
+},{
+  "_id": {
+    "$oid": "5f44a74c7b6ee1f8e307fdb0"
+  },
+  "name": "瓜田"
+},{
+  "_id": {
+    "$oid": "5f44a7617b6ee1f8e307fdb1"
+  },
+  "name": "東"
+},{
+  "_id": {
+    "$oid": "5f44a7757b6ee1f8e307fdb2"
+  },
+  "name": "竹原"
+},{
+  "_id": {
+    "$oid": "5f5221d22070afd2df485ecb"
+  },
+  "name": "國澤",
+  "slack_email": ""
+},{
+  "_id": {
+    "$oid": "5f5221d72070afd2df485ecc"
+  },
+  "name": "田口",
+  "slack_email": ""
+},{
+  "_id": {
+    "$oid": "5f5221dc2070afd2df485ecd"
+  },
+  "name": "若林",
+  "slack_email": ""
+}]

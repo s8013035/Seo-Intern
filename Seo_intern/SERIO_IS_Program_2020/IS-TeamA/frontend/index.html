@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TeamA</title>
+    <script src="js/vue.min.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/Call.js"></script>
+    <script src="js/Kanri.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="https://www.serio.inc/assets/images/common/favicon.ico">
+
+  <style>
+      body {
+          background: #eeeeee;
+          font-family: Meiryo; 
+        }
+  </style>
+
+</head>
+
+<body>
+  <div id="app">
+      <header>
+          <h1>
+              <router-link to="/" class="siteLogo">serio</router-link>
+          </h1>
+          <h2>受付管理システム</h2>
+          <nav>
+              <ul>
+                  <li><router-link to="/Call" class="link_style">担当者呼出</router-link></li>
+                  <li><router-link to="/Kanri" class="link_style">担当者管理</router-link></li>
+              </ul>
+          </nav>
+      </header>
+      <div>
+          <router-view></router-view>
+        <footer>
+            <p class="copyright">©SERIO Inc. all rights reserved</p>
+        </footer>
+      </div>
+  </div>
+  <script src="./index.js"></script>
+
+
+</body>
+</html>

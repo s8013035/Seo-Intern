@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@media only screen and (max-width:991px) {}
+@media only screen and (max-width:767px) {}
+@media only screen and (max-width:374px) {}
+
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* background-color: #e6e6e6; */
+    /* background-color: #fff; */
+ }
+
+ header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+        /* border-bottom: black solid 1px; */
+ }
+
+ h1 {
+    margin: 0; padding: 0;
+    font-size: 20px;
+ }
+ a {
+    text-decoration: none;
+    color: #4b4b4b;
+ }
+ nav {
+    margin: 0 0 0 auto;
+ }
+ ul {
+    list-style: none;
+    margin-right: 100px;
+    display: flex;
+ }
+ li {
+    margin-left: 30px;
+    font-size: 18px;
+ }
+ .link_style {
+    color: #4b4b4b;
+    text-decoration:underline;
+ }
+
+
+.siteLogo {
+	overflow: hidden;
+	display: block;
+	width: 144px;
+	height: 55px;
+	background: url(https://www.serio.inc/assets/images/common/logo.svg) no-repeat center center;
+	background-size: contain;
+	text-indent: -99999px;
+}
+
+footer{
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+div .white{
+    background: #fff;
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    margin: 30px auto;
+}

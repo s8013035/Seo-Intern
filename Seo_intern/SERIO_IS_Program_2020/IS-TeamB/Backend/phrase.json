@@ -1,0 +1,12 @@
+{
+    "$comment": [
+        "このjsonファイルに通知文を設定してください。",
+        "after_member以降の内容を読み込みます。",
+        "出力: (呼び出す人名) + after_member + before_company + (会社名) + after_company + (来客者) + after_visitor"
+    ],
+
+    "after_member":"さん、",
+    "before_company":"受付に",
+    "after_company":"社の",
+    "after_visitor":"様が来たらしいっス。知らんけど。"
+}
